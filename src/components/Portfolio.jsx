@@ -4,6 +4,7 @@ import installNode from "../assets/portfolio/a2.jpg";
 import navbar from "../assets/portfolio/a3.jpg";
 import reactParallax from "../assets/portfolio/a4.jpg";
 import reactWeather from "../assets/portfolio/a5.jpg";
+import gaming from "../assets/portfolio/a6.svg";
 
 const Portfolio = () => {
   const portfolios = [
@@ -29,6 +30,11 @@ const Portfolio = () => {
     },
     {
       id: 5,
+      src: gaming,
+      href: "https://152235865100-80-dts-final-project.netlify.app/",
+    },
+    {
+      id: 6,
       src: reactWeather,
       href: "https://github.com/FadilArfat?tab=repositories",
     },
