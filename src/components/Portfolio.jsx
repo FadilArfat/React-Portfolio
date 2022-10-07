@@ -31,7 +31,7 @@ const Portfolio = () => {
     {
       id: 5,
       src: gaming,
-      href: "https://152235865100-80-dts-final-project.netlify.app/",
+      href: "https://gaming-and-chill.netlify.app/",
     },
     {
       id: 6,
