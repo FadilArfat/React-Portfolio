@@ -29,12 +29,13 @@ const NavBar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 bg-transparent text-white bg-black fixed">
-      <div>
+    <div className="w-full">
+      <div className="flex justify-between items-center w-full h-20 px-4 bg-transparent text-white bg-black fixed">
+         <div>
         <h1 className="text-5xl italic font-signature text-white outline-title">FXDL</h1>
       </div>
 
-      <ul className="hidden md:flex">
+      <ul className="hidden md:flex italic">
         {links.map(({ id, link }) => (
           <li key={id} className="px-4 cursor-pointer capitalize font-medium text-white hover:text-gray-500 hover:scale-105 duration-200">
             <Link to={link} smooth duration={500}>
@@ -59,6 +60,8 @@ const NavBar = () => {
           ))}
         </ul>
       )}
+      </div>
+     
     </div>
   );
 };

@@ -4,7 +4,7 @@ import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
 import reactImage from "../assets/react.png";
 import python from "../assets/python.png";
-import androidStudio from "../assets/Android_Studio.svg";
+import androidStudio from "../assets/nextjs.webp";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
 import unity from "../assets/unity.png";
@@ -50,7 +50,7 @@ const Experience = () => {
     {
       id: 7,
       src: androidStudio,
-      title: "Android Studio",
+      title: "NextJS",
       style: "shadow-pink-400",
     },
     {
