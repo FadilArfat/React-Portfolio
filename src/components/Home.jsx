@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import HeroImage from "../assets/heroImage.png";
+import HeroImage from "../assets/header_head.png";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 import Typed from 'typed.js'
