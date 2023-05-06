@@ -1,3 +1,0 @@
-User-agent: *
-
-sitemap: https://fadilarfat.my.id/sitemap.xml
