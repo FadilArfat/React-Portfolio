@@ -8,6 +8,8 @@ import androidStudio from "../assets/nextjs.webp";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
 import unity from "../assets/unity.png";
+import { motion } from "framer-motion";
+import Rocket from "../assets/rocket-158_256.gif";
 
 const Experience = () => {
   const techs = [
@@ -51,7 +53,7 @@ const Experience = () => {
       id: 7,
       src: androidStudio,
       title: "NextJS",
-      style: "shadow-pink-400",
+      style: "shadow-gray-400",
     },
     {
       id: 8,
@@ -69,17 +71,38 @@ const Experience = () => {
 
   return (
     <div name="experience" className="mt-10  w-full h-screen">
+      <motion.img
+        initial={{ rotateZ: -90, x: 1000, opacity: 1 }}
+        whileInView={{ x: 0, opacity: 0 }}
+        transition={{ ease: "linear", duration: 2 }}
+        alt="rocket"
+        src={Rocket}
+        viewport={{ once: true }}
+        className="hidden md:visible md:flex md:absolute -z-[1]"
+      />
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
-        <div data-aos="fade-right">
-          <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">Experience</p>
-        </div>
+        <motion.div
+          initial={{ translateX: -100, opacity: 0 }}
+          whileInView={{ translateX: 0, opacity: 1 }}
+          transition={{ ease: "backInOut", duration: 0.4 }}
+        >
+          <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
+            Experience
+          </p>
+        </motion.div>
 
         <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
           {techs.map(({ id, src, title, style }) => (
-            <div key={id} className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}>
+            <motion.div
+              initial={{ opacity: 0, rotateX: 360 }}
+              whileInView={{ opacity: 1, rotateX: 0 }}
+              viewport={{ once: true }}
+              key={id}
+              className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
+            >
               <img src={src} alt="" className="w-20 mx-auto" />
               <p className="mt-4">{title}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

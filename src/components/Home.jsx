@@ -4,6 +4,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 import Typed from "typed.js";
 import styles from "./Home.module.css";
+import Reveal from "../animation/Reveal";
 
 const Home = () => {
   const el = useRef(null);
@@ -29,11 +30,13 @@ const Home = () => {
           <h2 className="outline-title text-4xl sm:text-7xl font-bold text-white">
             I'm <span ref={el} />
           </h2>
-          <p className="text-gray-500 py-4 max-w-md">
-            Freshgraduate from computer science. Currently, I love to work on
-            web application using technologies like React, React Native, NextJS,
-            Tailwind, and Bootstrap.
-          </p>
+          <Reveal>
+            <p className="text-gray-500 py-4 max-w-md">
+              Freshgraduate from computer science. Currently, I love to work on
+              web application using technologies like React, React Native,
+              NextJS, Tailwind, and Bootstrap.
+            </p>
+          </Reveal>
           <div>
             <Link
               to="portfolio"

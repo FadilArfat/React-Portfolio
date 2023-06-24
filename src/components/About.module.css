@@ -1,0 +1,14 @@
+.astro {
+    position: relative;
+    height: 100%;
+    top: 20px;
+    right: 20px;
+    animation: animateUser 4s linear infinite;
+}
+
+@keyframes animateUser {
+    50% {
+        right: 10px;
+        top: 10px;
+    }
+}
